@@ -5,10 +5,10 @@ import pandas as pd
 from nba_api.stats.endpoints import leaguedashplayerstats
 
 # Define the seasons (NBA season format: 'YYYY-YY')
-seasons = [f"{year}-{str(year + 1)[-2:]}" for year in range(1995, 2026)]
+seasons = [f"{year}-{str(year + 1)[-2:]}" for year in range(1999, 2026)]
 
-# Ensure SEASONS directory exists
-output_dir = 'SEASONS'
+# Ensure data directory exists
+output_dir = 'data'
 os.makedirs(output_dir, exist_ok=True)
 
 columns_to_drop = [
