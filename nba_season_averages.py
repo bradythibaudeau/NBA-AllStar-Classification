@@ -121,4 +121,4 @@ if all_season_frames:
     combined_df.to_csv(combined_output_path, index=False)
     print(f"Saved combined file: {combined_output_path}")
 else:
-    print('No data was fetched. Combined file was not created.')
+    print('No data was fetched.')
