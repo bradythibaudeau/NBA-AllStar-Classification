@@ -20,6 +20,7 @@ os.makedirs(output_dir, exist_ok=True)
 columns_to_drop = [
     'NICKNAME',
     'TEAM_ID',
+    'AGE',
     'NBA_FANTASY_PTS',
     'WNBA_FANTASY_PTS',
     'GP_RANK',
@@ -62,7 +63,7 @@ all_season_frames = []
 
 
 def fetch_player_stats(season, season_type, per_mode='PerGame', timeout_seconds=120, max_retries=5):
-    """Fetch a season split with retries to handle transient NBA stats API timeouts."""
+    # Fetch a season split with retries to handle transient NBA stats API timeouts
     for attempt in range(1, max_retries + 1):
         try:
             stats = leaguedashplayerstats.LeagueDashPlayerStats(
