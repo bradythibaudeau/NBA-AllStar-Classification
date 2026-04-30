@@ -27,7 +27,12 @@ Build and evaluate machine learning models that distinguish All-Star and non-All
 
 ## Setup
 1. Create and activate a Python environment.
-2. Install dependencies:
+
+```bash
+python -m venv venv
+```
+
+3. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
