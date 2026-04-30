@@ -1,3 +1,5 @@
+# Author: Brady Thibaudeau
+# Date: 2024-05-11
 # Script to fetch NBA player season averages from 1999-2026 and mark All-Star players
 # Data is combined into a single CSV file for use in classification modeling
 
